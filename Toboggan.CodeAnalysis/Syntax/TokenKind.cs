@@ -1,0 +1,30 @@
+namespace Toboggan.Syntax;
+
+public enum TokenKind
+{
+    WHITESPACE,
+    NUMBER,
+    PLUS,
+    DASH,
+    STAR,
+    SLASH,
+    EOF,
+    IDENTIFIER,
+    INVALID,
+    EQUALS,
+    OPEN_PARANTHESES,
+    CLOSE_PARANTHESES,
+    UNARY_EXPRESSION,
+    LITERAL_EXPRESSION,
+    PARANTHESES_EXPRESSION,
+    BINARY_EXPRESSION,
+    TRUE,
+    FALSE,
+    NAME_EXPRESSION,
+    ASSIGNMENT_EXPRESSION,
+    DOUBLE_EQUALS,
+    NOT_EQUALS,
+    NOT,
+    DOUBLE_OR,
+    DOUBLE_AND,
+}

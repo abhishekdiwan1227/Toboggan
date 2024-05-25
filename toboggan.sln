@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toboggan.CodeAnalysis", "Toboggan.CodeAnalysis\Toboggan.CodeAnalysis.csproj", "{C7241EA7-514B-4B21-B3DA-0D87543317DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toboggan.Repl", "Toboggan.Repl\Toboggan.Repl.csproj", "{06FEAC77-A54E-4DF3-B098-3625E93E1DCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7241EA7-514B-4B21-B3DA-0D87543317DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7241EA7-514B-4B21-B3DA-0D87543317DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7241EA7-514B-4B21-B3DA-0D87543317DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7241EA7-514B-4B21-B3DA-0D87543317DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06FEAC77-A54E-4DF3-B098-3625E93E1DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06FEAC77-A54E-4DF3-B098-3625E93E1DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06FEAC77-A54E-4DF3-B098-3625E93E1DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06FEAC77-A54E-4DF3-B098-3625E93E1DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
