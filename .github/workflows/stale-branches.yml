@@ -14,4 +14,4 @@ jobs:
         id: stale-branch
         with:
           gh-token: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo ${{ steps.stale-branch.outcome }}
+      - run: echo ${{ steps.stale-branch.outputs.branches-list }}
