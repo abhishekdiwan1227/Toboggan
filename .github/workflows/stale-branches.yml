@@ -6,7 +6,7 @@ jobs:
   stale-branch:
     runs-on: ubuntu-latest
     outputs:
-      branches: ${{ steps.stale-branch.outputs.branches }}
+      branches: ${{ steps.stale-branch.outputs.branches-list }}
     steps:
       - uses: abhishekdiwan1227/common-actions/stale-branches@master
         id: stale-branch
