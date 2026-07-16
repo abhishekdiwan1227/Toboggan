@@ -10,3 +10,4 @@ jobs:
     steps:
       - uses: abhishekdiwan1227/common-actions/stale-branches@master
         id: stale-branch
+      - run: echo ${{ steps.stale-branch.outputs.branches-list }}
