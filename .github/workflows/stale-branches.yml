@@ -10,4 +10,6 @@ jobs:
     steps:
       - uses: abhishekdiwan1227/common-actions/stale-branches@master
         id: stale-branch
+        with:
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
       - run: echo ${{ steps.stale-branch.outputs.branches-list }}
