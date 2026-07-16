@@ -7,11 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: read
-    outputs:
-      branches: ${{ steps.stale-branch.outputs.branches-list }}
     steps:
       - uses: abhishekdiwan1227/common-actions/stale-branches@master
         id: stale-branch
         with:
           gh-token: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo ${{ steps.stale-branch.outputs.branches-list }}
+      - run: echo ${{ steps.stale-branch.outputs.branches-list }} >> $GITHUB_OUTPUT
