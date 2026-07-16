@@ -4,4 +4,4 @@ jobs:
   stale-branch:
     runs-on: ubuntu-latest
     steps:
-      - uses: abhishekdiwan1227/common-actions/tree/master/stale-branches
+      - uses: abhishekdiwan1227/common-actions/stale-branches
