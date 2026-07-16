@@ -5,5 +5,8 @@ on: workflow_dispatch
 jobs:
   stale-branch:
     runs-on: ubuntu-latest
+    outputs:
+      branches: ${{ steps.stale-branch.outputs.branches }}
     steps:
       - uses: abhishekdiwan1227/common-actions/stale-branches@master
+        id: stale-branch
