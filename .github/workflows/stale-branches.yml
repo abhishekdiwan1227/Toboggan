@@ -14,6 +14,6 @@ jobs:
           gh-token: ${{ secrets.GITHUB_TOKEN }}
       - run: |
           echo "# deleted branches" >> $GITHUB_STEP_SUMMARY
-          for branch in ${{ steps.stale-branch.outcome.branch-list }}; do
+          for branch in ${{ steps.stale-branch.outcome.branches-list }}; do
             echo "- $branch" >> $GITHUB_STEP_SUMMARY
           done
