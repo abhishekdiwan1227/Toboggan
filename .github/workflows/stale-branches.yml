@@ -1,5 +1,8 @@
 name: Stale Branches
 
+on:
+  workflow-dispatch
+
 jobs:
   stale-branch:
     runs-on: ubuntu-latest
