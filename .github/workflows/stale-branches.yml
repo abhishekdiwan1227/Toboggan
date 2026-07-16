@@ -1,7 +1,6 @@
 name: Stale Branches
 
-on:
-  workflow-dispatch
+on: workflow_dispatch
 
 jobs:
   stale-branch:
