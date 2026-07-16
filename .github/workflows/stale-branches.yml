@@ -12,4 +12,8 @@ jobs:
         id: stale-branch
         with:
           gh-token: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo branches=${{ steps.stale-branch.outputs.branches-list }} >> $GITHUB_STEP_SUMMARY
+      - run: |
+          echo "# deleted branches" >> $GITHUB_STEP_SUMMARY
+          for branch in ${{ steps.stale-branch.outcome.branch-list }}; do
+            echo "- $branch" >> $GITHUB_STEP_SUMMARY
+          done
