@@ -5,6 +5,8 @@ on: workflow_dispatch
 jobs:
   stale-branch:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
     outputs:
       branches: ${{ steps.stale-branch.outputs.branches-list }}
     steps:
